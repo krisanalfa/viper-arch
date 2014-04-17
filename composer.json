@@ -1,0 +1,11 @@
+{
+    "name": "krisanalfa/viper-arch",
+    "description": "Viper Archetype",
+    "version": "0.0.1",
+    "require": {
+        "xinix-technology/norm": "dev-master",
+        "xinix-technology/bono": "dev-master",
+        "krisanalfa/bono-blade": "dev-master",
+        "krisanalfa/blade-theme": "dev-master"
+    }
+}
