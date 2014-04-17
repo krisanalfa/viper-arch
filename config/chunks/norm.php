@@ -16,8 +16,8 @@ return array(
     // Collections of database
     'norm.collections' => array(
         'mapping' => array(
-            'Author' => array(
-                // Author using hashing for password, so we need an observer
+            'User' => array(
+                // User using hashing for password, so we need an observer
                 'observers' => array(
                     '\\Norm\\Observer\\Hashed' => array(
                         'fields'  => array('password'),
@@ -30,8 +30,8 @@ return array(
                 'hidden' => array('password'),
                 // Source structure
                 'schema' => array(
-                    'username'   => String::getInstance('username')->filter('trim|required|unique:Author,username'),
-                    'email'      => String::getInstance('email')->filter('trim|required|unique:Author,email'),
+                    'username'   => String::getInstance('username')->filter('trim|required|unique:User,username'),
+                    'email'      => String::getInstance('email')->filter('trim|required|unique:User,email'),
                     'first_name' => String::getInstance('first_name')->filter('trim'),
                     'last_name'  => String::getInstance('last_name')->filter('trim'),
                     'twitter'    => String::getInstance('twitter')->filter('trim'),

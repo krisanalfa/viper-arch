@@ -7,17 +7,12 @@ return array(
 
     // The providers
     'bono.providers' => array(
-        '\\Viper\\Provider\\ErrorHandlerProvider',
-        '\\Viper\\Provider\\ViperProvider',
-        '\\Viper\\Provider\\AuthProvider',
         '\\KrisanAlfa\\Blade\\Provider\\BladeProvider',
         '\\Norm\\Provider\\NormProvider',
     ),
 
     // The Middlewares
     'bono.middlewares' => array(
-        '\\Viper\\Middleware\\InstallerMiddleware',
-        '\\Viper\\Middleware\\AuthMiddleware',
         '\\Bono\\Middleware\\ContentNegotiatorMiddleware',
         '\\Bono\\Middleware\\ControllerMiddleware',
     ),
@@ -36,9 +31,7 @@ return array(
     'bono.controllers' => array(
         'default' => '\\Norm\\Controller\\NormController',
         'mapping' => array(
-            '/author'  => null,
-            '/tags'    => null,
-            '/entries' => '\\Viper\\Controller\\EntriesController',
+            '/user'  => null,
         ),
     ),
 

@@ -28,8 +28,6 @@
  *
  * @author      Krisan Alfa Timur <krisan47@gmail.com>
  * @copyright   2013 Krisan Alfa Timur (PT Sagara Xinix Solusitama)
- * @link        http://xinix.co.id/products/viper
- * @license     https://raw.github.com/krisanalfa/viper/master/LICENSE
  *
  */
 
@@ -37,4 +35,12 @@
 require '../vendor/autoload.php';
 
 // Turn on the lights
-new \Bono\App(array('autorun' => true));
+$app = new \Bono\App(
+    array('autorun' => false)
+);
+
+$app->get('/', function () use ($app) {
+    $app->view->render('home');
+});
+
+$app->run();
