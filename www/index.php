@@ -43,7 +43,7 @@ $app = new \Bono\App(
 
 // When application get request to '/' path
 $app->get('/', function () use ($app) {
-    $app->view->render('home');
+    $app->render('home');
 });
 
 // Turn on the light

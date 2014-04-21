@@ -2,6 +2,8 @@
 
 Quickly build your application with:
 ```
+$ mkdir my-project
+$ cd my-project
 $ xpax init viper-arch
 ```
 
