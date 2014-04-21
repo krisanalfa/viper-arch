@@ -34,13 +34,17 @@
 // The composer autoload
 require '../vendor/autoload.php';
 
-// Turn on the lights
+// Create bulb application
 $app = new \Bono\App(
-    array('autorun' => false)
+    array(
+        'autorun' => false
+    )
 );
 
+// When application get request to '/' path
 $app->get('/', function () use ($app) {
     $app->view->render('home');
 });
 
+// Turn on the light
 $app->run();

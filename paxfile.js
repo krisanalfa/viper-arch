@@ -11,7 +11,7 @@ module.exports = function() {
         }
 
         logger.log('Updating composer...'.yellow);
-        return cmd('composer', ['update', '-vvv']).then(function(stream) {
+        return cmd('composer', ['update']).then(function(stream) {
             console.log(stream[0]);
         });
     });

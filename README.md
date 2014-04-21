@@ -7,3 +7,4 @@ $ xpax init viper-arch
 
 Viper archetype use:
 - BonoBlade
+- BladeTheme
