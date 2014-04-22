@@ -6,6 +6,7 @@
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
         "krisanalfa/bono-blade": "dev-master",
-        "krisanalfa/blade-theme": "dev-master"
+        "krisanalfa/blade-theme": "dev-master",
+        "ircmaxell/password-compat": "dev-master"
     }
 }
