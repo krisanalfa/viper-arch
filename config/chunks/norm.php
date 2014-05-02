@@ -1,7 +1,7 @@
 <?php
 
-use \Norm\Schema\String;
-use \Norm\Schema\Password;
+use Norm\Schema\String;
+use Norm\Schema\Password;
 
 // NORM
 return array(

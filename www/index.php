@@ -34,8 +34,10 @@
 // The composer autoload
 require '../vendor/autoload.php';
 
+use Bono\App;
+
 // Create bulb application
-$app = new \Bono\App(
+$app = new App(
     array(
         'autorun' => false
     )

@@ -1,6 +1,6 @@
 <?php
 
-use \Bono\App;
+use Bono\App;
 
 $config = array();
 $app    = App::getInstance();
