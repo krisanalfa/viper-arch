@@ -1,19 +1,29 @@
 module.exports = function() {
     'use strict';
 
-    var context = this,
-        cmd = context.require('./utils/cmd'),
-        Q = context.require('q');
+    var cmd = this.require('./utils/cmd'),
+        Q = this.require('q'),
+        context = this;
 
     this.task('init', function(logger) {
         if (arguments.length > 1) {
             throw new Error('Wrong argument');
         }
 
-        logger.log('Updating composer...'.yellow);
-        return cmd('composer', ['update']).then(function(stream) {
-            console.log(stream[0]);
-        });
+        logger.head('Installing package from composer...');
+        return context.exec(['php', 'composer', 'install'], logger);
+    });
+
+    this.task('serve', function(logger) {
+        if (arguments.length > 1) {
+            throw new Error('Wrong argument');
+        }
+
+        logger.head('Serve standalone http...');
+        if (!this.argv.t) {
+            this.argv.t = './www';
+        }
+        return context.exec(['php', 'serve'], logger);
     });
 
 };

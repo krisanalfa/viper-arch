@@ -8,5 +8,11 @@
         "krisanalfa/bono-blade": "dev-master",
         "krisanalfa/blade-theme": "dev-master",
         "ircmaxell/password-compat": "dev-master"
+    },
+    "autoload": {
+        "psr-0" : {
+            "KrisanAlfa\\Blade" : "/home/alfa/workspaces/internal/bono-blade/src",
+            "KrisanAlfa\\Theme\\BladeTheme" : "/home/alfa/workspaces/internal/blade-theme/src"
+        }
     }
 }

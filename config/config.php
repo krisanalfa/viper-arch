@@ -2,19 +2,20 @@
 
 use Bono\App;
 
-$config = array();
+$cfg = array();
 $app    = App::getInstance();
-$path   = $app->config('config.path') . DIRECTORY_SEPARATOR . 'chunks';
+$path   = __DIR__ . DIRECTORY_SEPARATOR . 'chunks';
 
-if ($directoryHandler = opendir($path)) {
-    while (($fileName = readdir($directoryHandler)) !== false) {
-        if (is_file($path . DIRECTORY_SEPARATOR . $fileName)) {
-            $content = require_once($path . DIRECTORY_SEPARATOR . $fileName);
-            $config  = array_merge_recursive($config, $content);
+if ($handle = opendir($path)) {
+    while (false !== ($entry = readdir($handle))) {
+        $pathToFile = $path . DIRECTORY_SEPARATOR . $entry;
+        if (is_file($pathToFile)) {
+            $content = require_once($pathToFile);
+            $cfg  = array_merge_recursive($cfg, $content);
         }
     }
 
-    closedir($directoryHandler);
+    closedir($handle);
 }
 
-return $config;
+return $cfg;
