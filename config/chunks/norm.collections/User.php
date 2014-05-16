@@ -6,12 +6,7 @@ use Norm\Schema\Password;
 return array(
     // User using hashing for password, so we need an observer
     'observers' => array(
-        '\\Norm\\Observer\\Hashed' => array(
-            'fields'  => array('password'),
-            'algo'    => PASSWORD_BCRYPT,
-            // You may change the cost to improve hashing method
-            'options' => array('cost' => 12),
-        )
+        '\\Norm\\Observer\\Hashed' => array()
     ),
     // Hidden attributes
     'hidden' => array('password'),
