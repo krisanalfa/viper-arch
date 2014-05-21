@@ -5,7 +5,7 @@ return array(
     // The Middlewares
     'bono.middlewares' => array(
         '\\Bono\\Middleware\\ContentNegotiatorMiddleware',
-        '\\Bono\\Middleware\\ControllerMiddleware',
+        '\\KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
         '\\Bono\\Middleware\\NotificationMiddleware',
         '\\Bono\\Middleware\\SessionMiddleware',
     ),

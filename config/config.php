@@ -2,9 +2,9 @@
 
 use Bono\App;
 
-$cfg = array();
-$app    = App::getInstance();
-$path   = __DIR__ . DIRECTORY_SEPARATOR . 'chunks';
+$cfg  = array();
+$app  = App::getInstance();
+$path = __DIR__ . DIRECTORY_SEPARATOR . 'chunks';
 
 if ($handle = opendir($path)) {
     while (false !== ($entry = readdir($handle))) {
@@ -12,7 +12,7 @@ if ($handle = opendir($path)) {
 
         if (is_file($pathToFile)) {
             $content = require_once($pathToFile);
-            $cfg  = array_merge_recursive($cfg, $content);
+            $cfg     = array_merge_recursive($cfg, $content);
         }
     }
 
