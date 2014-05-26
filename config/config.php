@@ -1,9 +1,6 @@
 <?php
 
-use Bono\App;
-
 $cfg  = array();
-$app  = App::getInstance();
 $path = __DIR__ . DIRECTORY_SEPARATOR . 'chunks';
 
 if ($handle = opendir($path)) {
