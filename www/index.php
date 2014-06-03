@@ -39,19 +39,6 @@ use Bono\App;
 // Create bulb application
 $app = new App(
     array(
-        'autorun' => false
+        'autorun' => true
     )
 );
-
-// When application get request to '/' path
-$app->get('/', function () use ($app) {
-    $app->render('home');
-});
-
-// When application get request to '/disclaimer' path
-$app->get('/disclaimer', function () use ($app) {
-    $app->render('disclaimer');
-});
-
-// Turn on the light
-$app->run();
