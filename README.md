@@ -8,5 +8,6 @@ $ xpax init viper-arch // or xpax init https://github.com/krisanalfa/viper-arch.
 ```
 
 Viper archetype use:
-- BonoBlade
-- BladeTheme
+- Bono Blade Template Engine
+- Blade Theme (Partial resolver)
+- Zurb Foundation Theme (blade-foundation)
