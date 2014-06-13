@@ -1,6 +1,6 @@
 <?php
 
-$normPath = __DIR__ . DIRECTORY_SEPARATOR . 'norm.collections';
+$normPath = __DIR__ . DIRECTORY_SEPARATOR . 'collections';
 $config   = array('norm.collections' => array(
     'default' => array(
         'observers' => array(

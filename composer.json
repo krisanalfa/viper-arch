@@ -7,11 +7,12 @@
         "krisanalfa/bono-blade": "dev-master",
         "krisanalfa/bono-kraken": "dev-master",
         "krisanalfa/blade-theme": "dev-master",
+        "krisanalfa/blade-foundation": "dev-master",
         "ircmaxell/password-compat": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "App": "src/"
+            "App": "src/",
         }
     }
 }

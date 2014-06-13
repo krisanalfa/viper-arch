@@ -1,7 +1,7 @@
 <?php
 
 use Norm\Schema\String;
-use Norm\Schema\Password;
+use KrisanAlfa\Theme\BladeFoundation\Schema\Password;
 
 return array(
     // User using hashing for password, so we need an observer

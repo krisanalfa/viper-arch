@@ -43,11 +43,12 @@ Thumbs.db
 
 # Package Controll generated files #
 ####################################
-node_modules
-vendor
-*.lock
-bower_components
+/node_modules
+/vendor
+/*.lock
+/bower_components
 
 # Spesific Reason #
 ###################
-composer.phar
+/composer.phar
+/www/vendor
