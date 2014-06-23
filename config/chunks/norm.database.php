@@ -1,7 +1,7 @@
 <?php
 
 return array(
-    'norm.databases' => array(
+    'norm.datasources' => array(
         'mongo' => array(
             'driver' => '\\Norm\\Connection\\MongoConnection',
             'database' => 'bono',

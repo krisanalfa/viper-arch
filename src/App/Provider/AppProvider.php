@@ -15,7 +15,7 @@ use Norm\Norm;
  * @license     https://raw.github.com/krisanalfa/viper/master/LICENSE
  * @package     Viper Arch
  */
-class ViperProvider extends Provider
+class AppProvider extends Provider
 {
 
     /**

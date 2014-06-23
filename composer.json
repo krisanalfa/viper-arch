@@ -12,6 +12,14 @@
     "autoload": {
         "psr-0": {
             "App": "src/",
-        }
+            "KrisanAlfa\\Theme\\BladeTheme": "/Users/krisanalfa/Projects/Internal/blade-theme/src",
+            "KrisanAlfa\\Theme\\BladeFoundation": "/Users/krisanalfa/Projects/Internal/blade-foundation/src",
+            "Bono": "/Users/krisanalfa/Projects/Internal/bono/src",
+            "Norm": "/Users/krisanalfa/Projects/Internal/norm/src",
+            "Bono\\Lang": "/Users/krisanalfa/Projects/Internal/bono-lang/src"
+        },
+        "files": [
+            "/Users/krisanalfa/Projects/Internal/bono-lang/src/Bono/Lang/functions.php"
+        ]
     }
 }

@@ -12,12 +12,12 @@ return array(
     'hidden' => array('password'),
     // Source structure
     'schema' => array(
-        'username'    => String::getInstance('username')->filter('trim|required|unique:User,username'),
-        'email'       => String::getInstance('email')->filter('trim|required|unique:User,email'),
-        'first_name'  => String::getInstance('first_name')->filter('trim|required'),
-        'middle_name' => String::getInstance('middle_name')->filter('trim'),
-        'last_name'   => String::getInstance('last_name')->filter('trim|required'),
-        'twitter'     => String::getInstance('twitter')->filter('trim|required'),
-        'password'    => Password::getInstance('password')->filter('trim|required|confirmed'),
+        'username'    => String::create('username')->filter('trim|required|unique:User,username'),
+        'email'       => String::create('email')->filter('trim|required|unique:User,email'),
+        'first_name'  => String::create('first_name')->filter('trim|required'),
+        'middle_name' => String::create('middle_name')->filter('trim'),
+        'last_name'   => String::create('last_name')->filter('trim|required'),
+        'twitter'     => String::create('twitter')->filter('trim|required'),
+        'password'    => Password::create('password')->filter('trim|required|confirmed'),
     ),
 );

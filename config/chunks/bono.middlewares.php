@@ -4,9 +4,9 @@
 return array(
     // The Middlewares
     'bono.middlewares' => array(
-        '\\Bono\\Middleware\\ContentNegotiatorMiddleware',
-        '\\KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
-        '\\Bono\\Middleware\\NotificationMiddleware',
+        '\\KrisanAlfa\\Theme\\BladeFoundation\\Middleware\\NotificationMiddleware',
         '\\Bono\\Middleware\\SessionMiddleware',
+        '\\KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
+        '\\Bono\\Middleware\\ContentNegotiatorMiddleware',
     ),
 );

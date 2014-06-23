@@ -1,7 +1,7 @@
 <?php
 
 return array(
-    'navbar.title' => 'Bono PHP Framework',
+    'navbar.title' => 'Viper Arch',
     'navbar.menus' => array(
         array(
             'title' => 'Dashboard',
