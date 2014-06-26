@@ -5,21 +5,15 @@
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
         "krisanalfa/bono-blade": "dev-master",
+        "krisanalfa/bono-lang": "dev-master",
         "krisanalfa/bono-kraken": "dev-master",
         "krisanalfa/blade-foundation": "dev-master",
         "ircmaxell/password-compat": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "App": "src/",
-            "KrisanAlfa\\Theme\\BladeTheme": "/Users/krisanalfa/Projects/Internal/blade-theme/src",
-            "KrisanAlfa\\Theme\\BladeFoundation": "/Users/krisanalfa/Projects/Internal/blade-foundation/src",
-            "Bono": "/Users/krisanalfa/Projects/Internal/bono/src",
-            "Norm": "/Users/krisanalfa/Projects/Internal/norm/src",
-            "Bono\\Lang": "/Users/krisanalfa/Projects/Internal/bono-lang/src"
-        },
-        "files": [
-            "/Users/krisanalfa/Projects/Internal/bono-lang/src/Bono/Lang/functions.php"
-        ]
-    }
+            "App": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
