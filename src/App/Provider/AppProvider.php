@@ -13,7 +13,6 @@ use Bono\Provider\Provider;
  */
 class AppProvider extends Provider
 {
-
     /**
      * Initialize the provider
      *

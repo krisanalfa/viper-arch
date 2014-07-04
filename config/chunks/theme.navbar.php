@@ -1,13 +1,8 @@
 <?php
 
 return array(
-    'navbar.title' => 'Viper Arch',
+    'navbar.title' => '<i class="fa fa-cube"></i> Viper Arch',
     'navbar.menus' => array(
-        array(
-            'title' => 'Dashboard',
-            'uri'   => '/',
-            'icon'  => '<i class="fa fa-home"></i>'
-        ),
         array(
             'title'    => 'Menu',
             'children' => array(
