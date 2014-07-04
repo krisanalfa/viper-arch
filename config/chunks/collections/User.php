@@ -8,8 +8,6 @@ return array(
     'observers' => array(
         '\\Norm\\Observer\\Hashed' => array()
     ),
-    // Hidden attributes
-    'hidden' => array('password'),
     // Source structure
     'schema' => array(
         'username'    => String::create('username')->filter('trim|required|unique:User,username'),

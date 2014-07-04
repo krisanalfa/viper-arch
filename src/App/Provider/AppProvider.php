@@ -1,10 +1,6 @@
-<?php
+<?php namespace App\Provider;
 
-namespace App\Provider;
-
-use Bono\Helper\URL;
 use Bono\Provider\Provider;
-use Norm\Norm;
 
 /**
  * Basic URI mapping that not handled by NormController
