@@ -4,7 +4,7 @@ return array(
     'navbar.title' => '<i class="fa fa-cube"></i> Viper Arch',
     'navbar.menus' => array(
         array(
-            'title'    => 'Menu',
+            'title'    => 'Master Data',
             'children' => array(
                 array(
                     'title' => 'User',
@@ -12,7 +12,7 @@ return array(
                     'icon'  => '<i class="fa fa-user"></i>'
                 ),
             ),
-            'icon'     => '<i class="fa fa-bars"></i>',
+            'icon'     => '<i class="fa fa-database"></i>',
         ),
     ),
 );

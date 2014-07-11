@@ -1,7 +1,7 @@
 <?php
 
-use KrisanAlfa\Theme\BladeFoundation\Schema\String;
-use KrisanAlfa\Theme\BladeFoundation\Schema\Password;
+use KrisanAlfa\Theme\Schema\String;
+use KrisanAlfa\Theme\Schema\Password;
 
 return array(
     // User using hashing for password, so we need an observer
