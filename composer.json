@@ -17,6 +17,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/krisanalfa/norm"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/krisanalfa/blade-foundation"
         }
     ],
     "autoload": {
