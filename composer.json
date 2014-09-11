@@ -5,7 +5,7 @@
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
         "krisanalfa/bono-blade": "~0.7.2",
-        "krisanalfa/blade-foundation": "~0.1.4",
+        "krisanalfa/blade-foundation": "~0.1.6",
         "krisanalfa/bono-kraken": "~0.0.2",
         "ircmaxell/password-compat": "1.0.*"
     },
