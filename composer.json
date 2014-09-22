@@ -4,29 +4,14 @@
     "require": {
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
-        "krisanalfa/bono-blade": "~0.7.2",
-        "krisanalfa/blade-foundation": "~0.1.6",
-        "krisanalfa/bono-kraken": "~0.0.2",
+        "krisanalfa/blade-foundation": "~0.2.0",
+        "krisanalfa/bono-kraken": "~0.0.5",
         "ircmaxell/password-compat": "1.0.*"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/krisanalfa/bono"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/krisanalfa/norm"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/krisanalfa/blade-foundation"
-        }
-    ],
     "autoload": {
         "psr-0": {
             "App": "src/"
         }
     },
-    "minimum_stability": "dev"
+    "minimum-stability": "dev"
 }

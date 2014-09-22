@@ -8,7 +8,7 @@ return array(
             'json' => 'application/json',
         ),
         'views' => array(
-            'application/json' => '\\Bono\\View\\JsonView',
+            'application/json' => 'Bono\\View\\JsonView',
         ),
     ),
 );
