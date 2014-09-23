@@ -39,6 +39,10 @@ use Bono\App;
 // Create bulb application
 $app = new App(
     array(
-        'autorun' => true
+        'autorun' => false,
+        'mode' => 'development',
     )
 );
+
+// Turn on the light
+$app->run();

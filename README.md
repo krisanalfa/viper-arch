@@ -1,13 +1,30 @@
-#VIPER Archetype for Bono PHP Framework
+# VIPER Archetype for Bono PHP Framework
 
-Quickly build your application with:
+### Quickly build your application with:
+
 ```
 $ mkdir my-project
 $ cd my-project
 $ xpax init viper-arch // or xpax init https://github.com/krisanalfa/viper-arch.git
 ```
+Or without xpax:
 
-Viper archetype use:
-- Bono Blade Template Engine
-- Blade Theme (Partial resolver)
-- Zurb Foundation Theme (blade-foundation)
+```
+$ git clone https://github.com/krisanalfa/viper-arch.git my-awesome-project
+$ cd my-awesome-project
+$ composer install
+```
+
+### Viper archetype use:
+- Bono Blade Template Engine ([bono-blade](https://github.com/krisanalfa/bono-blade))
+- Zurb Foundation Theme ([blade-foundation](https://github.com/krisanalfa/blade-foundation) based on [blade-theme](https://github.com/krisanalfa/blade-theme))
+- Kraken Dependency Injector ([bono-kraken](https://github.com/krisanalfa/bono-kraken))
+
+### Philosophy
+Viper lets you write your code in easy and neat style.
+No worries about class dependency, Kraken will resolve them automagicaly.
+Viper focus in testable application, each module can be separated via injecting them to the repository.
+With sleek and simple theme, you can quickly develop the protoype without struggle with your UI.
+Tired with `echo`? Blade Template Engine will make it fun.
+I guarantee, you'll enjoy your development with some fresh air.
+Viper makes you suck less.
