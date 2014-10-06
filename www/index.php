@@ -41,14 +41,9 @@ $app = new App(
     array(
         'autorun' => false,
         'mode' => 'development',
+        'debug' => true,
     )
 );
-
-$app->get('/login', function () use ($app) {
-    $view = $app->view;
-
-    $view->display('login');
-});
 
 // Turn on the light
 $app->run();
