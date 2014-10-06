@@ -4,9 +4,10 @@ return array(
     'norm.collections' => array(
         'default' => array(
             'observers' => array(
-                'Norm\\Observer\\Ownership' => array(),
-                'Norm\\Observer\\Timestampable' => array(),
+                'Norm\\Observer\\Ownership',
+                'Norm\\Observer\\Timestampable',
             ),
+            'limit' => 4,
         ),
         'resolvers' => array(
             'Norm\\Resolver\\CollectionResolver',

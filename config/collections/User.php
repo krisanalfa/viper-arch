@@ -15,7 +15,6 @@ return array(
         'first_name'  => String::create('first_name')->filter('trim|required'),
         'middle_name' => String::create('middle_name')->filter('trim'),
         'last_name'   => String::create('last_name')->filter('trim|required'),
-        'twitter'     => String::create('twitter')->filter('trim|required'),
         'password'    => Password::create('password')->filter('trim|required|confirmed'),
     ),
 );

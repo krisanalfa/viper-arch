@@ -4,7 +4,7 @@
     "require": {
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
-        "krisanalfa/blade-foundation": "~0.2.2",
+        "krisanalfa/sleek-theme": "dev-master",
         "krisanalfa/bono-kraken": "~0.0.5",
         "ircmaxell/password-compat": "1.0.*"
     },
