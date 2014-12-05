@@ -7,7 +7,7 @@ return array(
                 'Norm\\Observer\\Ownership',
                 'Norm\\Observer\\Timestampable',
             ),
-            'limit' => 4,
+            'limit' => 10,
         ),
         'resolvers' => array(
             'Norm\\Resolver\\CollectionResolver',

@@ -5,14 +5,19 @@ return array(
     'navbar.menus' => array(
         array(
             'title'    => 'Master Data',
+            'icon'     => '<i class="fa fa-database"></i>',
             'children' => array(
                 array(
                     'title' => 'User',
                     'uri'   => '/user',
                     'icon'  => '<i class="fa fa-user"></i>'
                 ),
+                array(
+                    'title' => 'Material',
+                    'uri'   => '/material',
+                    'icon'  => '<i class="fa fa-bookmark-o"></i>'
+                ),
             ),
-            'icon'     => '<i class="fa fa-database"></i>',
         ),
     ),
 );

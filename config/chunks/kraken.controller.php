@@ -7,6 +7,7 @@ return array(
         'default' => 'KrisanAlfa\\Kraken\\Controller\\NormController',
         'mapping' => array(
             '/user'  => null,
+            '/material'  => null,
         ),
     ),
 );
