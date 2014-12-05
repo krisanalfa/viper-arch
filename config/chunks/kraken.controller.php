@@ -3,12 +3,10 @@
 // BONO
 return array(
     // Application Controller using Kraken Container
-    'kraken.controllers' => array(
+    'kraken.controller' => array(
         'default' => 'KrisanAlfa\\Kraken\\Controller\\NormController',
         'mapping' => array(
             '/user'  => null,
-        ),
-        'dependencies' => array(
         ),
     ),
 );

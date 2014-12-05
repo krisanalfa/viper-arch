@@ -4,7 +4,7 @@
 return array(
     // Bono Themeing
     'bono.theme' => array(
-        'class' => 'KrisanAlfa\\Theme\\SleekTheme',
+        'class' => 'KrisanAlfa\\Theme\\BladeFoundation',
         'overwrite' => true,
     ),
 );

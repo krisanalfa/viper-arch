@@ -4,13 +4,13 @@
     "require": {
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
-        "krisanalfa/sleek-theme": "dev-master",
-        "krisanalfa/bono-kraken": "~0.0.5",
-        "ircmaxell/password-compat": "1.0.*"
+        "krisanalfa/blade-foundation": "dev-master",
+        "krisanalfa/bono-kraken": "dev-master",
+        "ircmaxell/password-compat": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "App": "src/"
+            "App": "src"
         }
     },
     "minimum-stability": "dev"
