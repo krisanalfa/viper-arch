@@ -1,9 +1,11 @@
 <?php
 
-// Provide the menu in your Navbar
+use Bono\App;
+
+// Provide the list of menu in your Navbar
 return array(
     // The title in your navbar, you also can add your logo here
-    'navbar.title' => '<i class="fa fa-cube"></i> Viper Arch',
+    'navbar.title' => '<i class="fa fa-cube"></i> App – '.App::getInstance()->config('mode'),
 
     // The menus in your navbar
     'navbar.menus' => array(

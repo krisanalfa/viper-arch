@@ -5,7 +5,7 @@
  *
  * MIT LICENSE
  *
- * Copyright (c) 2013 Krisan Alfa Timur (PT Sagara Xinix Solusitama)
+ * Copyright (c) 2014 Krisan Alfa Timur (PT Sagara Xinix Solusitama)
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -27,24 +27,33 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  * @author      Krisan Alfa Timur <krisan47@gmail.com>
- * @copyright   2013 Krisan Alfa Timur (PT Sagara Xinix Solusitama)
+ * @copyright   2014 Krisan Alfa Timur (PT Sagara Xinix Solusitama)
  *
  */
 
 // The composer autoload
-require '../vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use Bono\App;
 
 // Create bulb application
 $app = new App(
     array(
+        // Should application autostart after construction?
         'autorun'    => false,
+
+        // The mode of application
         'mode'       => 'development',
+
+        // Enable Slim debug
         'debug'      => true,
+
+        // Enable Bono debug
         'bono.debug' => true,
     )
 );
+
+$app->log->debug('Adding a new user', array('username' => 'Seldaek'));
 
 // Turn on the light
 $app->run();

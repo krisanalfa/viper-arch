@@ -5,13 +5,9 @@ $path = __DIR__ . DIRECTORY_SEPARATOR . 'chunks';
 
 if ($handle = opendir($path)) {
     while (false !== ($entry = readdir($handle))) {
-        $pathToFile = $path . DIRECTORY_SEPARATOR . $entry;
-
-        if (is_readable($pathToFile)) {
-            $content = require_once $pathToFile;
-
-            if (is_array($content)) {
-                $cfg = array_merge_recursive($cfg, $content);
+        if (! in_array($entry, array('.', '..'))) {
+            if (is_readable($pathToFile = $path . DIRECTORY_SEPARATOR . $entry)) {
+                if (is_array($content = require_once $pathToFile)) { $cfg = array_merge_recursive($cfg, $content); }
             }
         }
     }

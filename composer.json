@@ -6,11 +6,12 @@
         "xinix-technology/bono": "dev-master",
         "krisanalfa/blade-foundation": "dev-master",
         "krisanalfa/bono-kraken": "dev-master",
-        "ircmaxell/password-compat": "dev-master"
+        "ircmaxell/password-compat": "dev-master",
+        "monolog/monolog": ">=1.6.0"
     },
     "autoload": {
         "psr-0": {
-            "App": "src"
+            "Viper": "src"
         }
     },
     "minimum-stability": "dev"

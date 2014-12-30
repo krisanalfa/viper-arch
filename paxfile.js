@@ -11,6 +11,7 @@ module.exports = function() {
         }
 
         logger.head('Installing package from composer...');
+
         return context.exec(['php', 'composer', 'install'], logger);
     });
 
@@ -20,6 +21,7 @@ module.exports = function() {
         }
 
         logger.head('Serve standalone http...');
+
         if (!this.argv.t) {
             this.argv.t = './www';
         }

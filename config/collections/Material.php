@@ -3,6 +3,7 @@
 use KrisanAlfa\Theme\Schema\String;
 use KrisanAlfa\Theme\Schema\Integer;
 use KrisanAlfa\Theme\Schema\Reference;
+use Norm\Schema\Text;
 
 return array(
     // Source structure
@@ -16,6 +17,6 @@ return array(
                 $model->get('last_name'),
             ));
         })->filter('trim'),
-        'notes' => String::create('notes')->filter('trim'),
+        'notes' => Text::create('notes')->filter('trim'),
     ),
 );
