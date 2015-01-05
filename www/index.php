@@ -53,7 +53,5 @@ $app = new App(
     )
 );
 
-$app->log->debug('Adding a new user', array('username' => 'Seldaek'));
-
 // Turn on the light
 $app->run();

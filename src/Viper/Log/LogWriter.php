@@ -7,7 +7,7 @@ use Monolog\Logger;
 class LogWriter
 {
     /**
-     * @var resource
+     * @var Monolog\Logger
      */
     protected $resource;
 
@@ -108,7 +108,7 @@ class LogWriter
     /**
      * Get the resource we used to write the log
      *
-     * @return Logger
+     * @return Monolog\Logger
      */
     public function getResource()
     {
