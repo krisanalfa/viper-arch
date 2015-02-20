@@ -3,10 +3,10 @@
 // Database connection configuration
 return array(
     'norm.datasources' => array(
-        // Use mongodb
-        'mongo' => array(
+        // Use flat file
+        'flat' => array(
             // Driver for MongoDB
-            'driver' => 'Norm\\Connection\\MongoConnection',
+            'driver' => 'Norm\\Connection\\FlatFileConnection',
 
             // Database in MongoDB to store your datas
             'database' => 'bono',
