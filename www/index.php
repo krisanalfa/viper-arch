@@ -43,13 +43,13 @@ $app = new App(
         'autorun'    => false,
 
         // The mode of application
-        'mode'       => 'development',
+        'mode'       => 'production',
 
         // Enable Slim debug
-        'debug'      => true,
+        'debug'      => false,
 
         // Enable Bono debug
-        'bono.debug' => true,
+        'bono.debug' => false,
     )
 );
 

@@ -5,20 +5,20 @@ return array(
     // The providers
     'bono.providers' => array(
         // The version provider
-        'Viper\\Provider\\VersionProvider' => array(
+        'BComp\\Provider\\VersionProvider' => array(
             // Enter the team hostnames computer here
             'local' => array(
-                'supernova.local',
+
             ),
 
             // Enter the remote hostnames computer here
             'remote' => array(
-                'supernova.remote',
+
             ),
         ),
 
         // For logging purpose
-        'Viper\\Provider\\LogProvider' => array(
+        'BComp\\Provider\\LogProvider' => array(
             // Your log name
             'log.name' => 'ViperLog',
 

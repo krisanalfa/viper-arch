@@ -9,9 +9,8 @@ return array(
 
         // Resource mapping to it's controller, if mapper set to null, it'll use the 'default' one
         'mapping' => array(
-            '/user'  => null,
-            '/material'  => null,
-            // '/your/resource/path' => 'YourController'
+            '/user'     => null,
+            '/material' => null,
         ),
     ),
 );
