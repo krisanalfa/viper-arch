@@ -1,8 +1,8 @@
 <?php
 
-use KrisanAlfa\Theme\Schema\String;
-use KrisanAlfa\Theme\Schema\Password;
-use KrisanAlfa\Theme\Schema\Date;
+use Norm\Schema\String;
+use Norm\Schema\Password;
+use Norm\Schema\Date;
 
 return array(
     // User using hashing for password, so we need an observer

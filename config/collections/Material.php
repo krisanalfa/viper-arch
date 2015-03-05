@@ -1,9 +1,9 @@
 <?php
 
-use KrisanAlfa\Theme\Schema\String;
-use KrisanAlfa\Theme\Schema\Integer;
-use KrisanAlfa\Theme\Schema\Reference;
-use KrisanAlfa\Theme\Schema\Text;
+use Norm\Schema\String;
+use Norm\Schema\Integer;
+use Norm\Schema\Reference;
+use Norm\Schema\Text;
 
 return array(
     // Source structure
