@@ -1,6 +1,6 @@
 @extends('layout')
 
-<?php use ROH\Util\Inflector; ?>
+<?php use ROH\Util\Inflector; use KrisanAlfa\Theme\Components\Pagination; ?>
 
 <?php $schema = f('controller')->schema(); ?>
 
@@ -13,7 +13,9 @@
 @stop
 
 @section('tabssearch')
-    <input type="text" id="searchbar" class="show" placeholder="{{ l('Search {0}', array(Inflector::pluralize(Inflector::humanize(f('controller')->getClass())))) }} ..." value="{{{ $app->request->get('!match') }}}">
+<form action="{{ URL::current() }}" method="GET" style="padding: 0">
+    <input type="text" id="" class="show" placeholder="Free text search" value="{{{ $app->request->get('!match') }}}" name="!match">
+</form>
 @stop
 
 @section('menusearch')
@@ -34,19 +36,13 @@
                     <thead>
                         @section('table.head')
                         <tr>
-                            @if (count($schema))
-                                @foreach ($schema as $key => $field)
-                                    <th>
-                                        <a href="{{{ f('controller.url', '?!sort['.$key.']='.(@$_GET['!sort'][$key] == 1 ? -1 : 1)) }}}">
-                                            {{ $field['label'] }}
-                                        </a>
-                                    </th>
-                                @endforeach
-                            @else
+                            @foreach ($schema as $key => $field)
                                 <th>
-                                    Data
+                                    <a href="{{{ f('controller.url', '?!sort['.$key.']='.(@$_GET['!sort'][$key] == 1 ? -1 : 1)) }}}">
+                                        {{ $field['label'] }}
+                                    </a>
                                 </th>
-                            @endif
+                            @endforeach
                         </tr>
                         @show
                     </thead>
@@ -55,7 +51,7 @@
                         @show
 
                         @section('table.body')
-                            @if(! $entries->count(true))
+                            @if(! $entries->count(true) and ! count($entries->getCriteria()))
                                 <tr>
                                     <td colspan="{{ count($schema) }}" class="empty"><i class="xn xn-file-o xn-5x"></i><br />Data still empty.<br />Click <a href="{{ f('controller.url', '/null/create') }}"><i class="xn xn-plus"></i> New</a> to add new data.</td>
                                 </tr>
@@ -89,7 +85,7 @@
                     </tbody>
                 </table>
                 @section('pagination')
-                {{ KrisanAlfa\Theme\Components\Pagination::create($entries)->paginate() }}
+                {{ Pagination::create($entries)->paginate() }}
                 @show
             </div>
         </div>

@@ -17,7 +17,7 @@ return array(
         'middle_name' => String::create('middle_name')->filter('trim'),
         'last_name'   => String::create('last_name')->filter('trim|required'),
         'birth_place' => String::create('birth_place')->filter('trim'),
-        'birth_date'  => Date::create('birth_date')->filter('trim'),
-        'password'    => Password::create('password')->filter('trim|required|confirmed')->set('hidden', false),
+        'birth_date'  => Date::create('birth_date')->filter('trim|required'),
+        'password'    => Password::create('password')->filter('trim|required|confirmed'),
     ),
 );
