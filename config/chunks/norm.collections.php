@@ -12,7 +12,7 @@ return array(
             ),
 
             // Limit the entries that shown, then paginate them
-            'limit' => 10,
+            'limit' => 15,
         ),
 
         // Resolver to find where the schemas config stored see in /config/collections folder

@@ -43,15 +43,16 @@ $app = new App(
         'autorun'    => false,
 
         // The mode of application
-        'mode'       => 'production',
+        'mode'       => 'development',
 
         // Enable Slim debug
-        'debug'      => false,
+        // 'debug'      => false,
 
         // Enable Bono debug
-        'bono.debug' => false,
+        // 'bono.debug' => false,
     )
 );
 
 // Turn on the light
 $app->run();
+

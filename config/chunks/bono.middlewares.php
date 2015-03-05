@@ -8,7 +8,7 @@ return array(
         'KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
 
         // For session notification, like a flash session
-        'KrisanAlfa\\Theme\\Middleware\\NotificationMiddleware',
+        'Bono\\Middleware\\NotificationMiddleware',
 
         // Content negotiator for specific mime-type request
         'Bono\\Middleware\\ContentNegotiatorMiddleware',

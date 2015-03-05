@@ -5,7 +5,7 @@ use Bono\App;
 // Provide the list of menu in your Navbar
 return array(
     // The title in your navbar, you also can add your logo here
-    'navbar.title' => '<i class="fa fa-cube"></i> App – '.App::getInstance()->config('mode'),
+    'navbar.title' => 'App – '.ucfirst(App::getInstance()->config('mode')),
 
     // The menus in your navbar
     'navbar.menus' => array(
@@ -14,7 +14,7 @@ return array(
             'title'    => 'Master Data',
 
             // The icon for your navbar menu
-            'icon'     => '<i class="fa fa-database"></i>',
+            'icon'     => '<i class="xn xn-database"></i>',
 
             // Dropdown menu
             'children' => array(
@@ -27,7 +27,7 @@ return array(
                     'uri'   => '/user',
 
                     // The icon for your navbar menu
-                    'icon'  => '<i class="fa fa-user"></i>'
+                    'icon'  => '<i class="xn xn-user"></i>'
                 ),
 
                 // 2nd child
@@ -39,7 +39,7 @@ return array(
                     'uri'   => '/material',
 
                     // The icon for your navbar menu
-                    'icon'  => '<i class="fa fa-bookmark-o"></i>'
+                    'icon'  => '<i class="xn xn-bookmark-o"></i>'
                 ),
             ),
         ),

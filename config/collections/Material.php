@@ -3,7 +3,7 @@
 use KrisanAlfa\Theme\Schema\String;
 use KrisanAlfa\Theme\Schema\Integer;
 use KrisanAlfa\Theme\Schema\Reference;
-use Norm\Schema\Text;
+use KrisanAlfa\Theme\Schema\Text;
 
 return array(
     // Source structure
