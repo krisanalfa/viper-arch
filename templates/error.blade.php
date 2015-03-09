@@ -13,32 +13,31 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-        <link href="<?php echo URL::base('vendor/normalize-css/normalize.css') ?>" rel="stylesheet">
-        <link href="<?php echo URL::base('vendor/naked/css/naked.min.css') ?>" rel="stylesheet">
-        <link href="<?php echo URL::base('vendor/tshirt-popup/tshirt-popup.css') ?>" rel="stylesheet">
-        <link href="<?php echo URL::base('vendor/owl/owl-carousel/owl.carousel.css') ?>" rel="stylesheet">
-        <link href="<?php echo URL::base('vendor/owl/owl-carousel/owl.theme.css') ?>" rel="stylesheet">
-        <link href="<?php echo URL::base('vendor/owl/owl-carousel/owl.transitions.css') ?>" rel="stylesheet">
-        <link href="<?php echo URL::base('vendor/jacket-awesome/jacket-awesome.css') ?>" rel="stylesheet">
-        <link href="<?php echo URL::base('vendor/naked2-theme/css/jacket.css') ?>" rel="stylesheet">
+        <link href="{{ URL::base('vendor/normalize-css/normalize.css') }}" rel="stylesheet">
+        <link href="{{ URL::base('vendor/naked/css/naked.min.css') }}" rel="stylesheet">
+        <link href="{{ URL::base('vendor/tshirt-popup/tshirt-popup.css') }}" rel="stylesheet">
+        <link href="{{ URL::base('vendor/owl/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+        <link href="{{ URL::base('vendor/owl/owl-carousel/owl.theme.css') }}" rel="stylesheet">
+        <link href="{{ URL::base('vendor/owl/owl-carousel/owl.transitions.css') }}" rel="stylesheet">
+        <link href="{{ URL::base('vendor/jacket-awesome/jacket-awesome.css') }}" rel="stylesheet">
+        <link href="{{ URL::base('vendor/naked2-theme/css/jacket.css') }}" rel="stylesheet">
 
         @section('customcss')
             <!-- Custom CSS -->
         @show
 
-        <script src="<?php echo URL::base('vendor/modernizr/modernizr.js') ?>"></script>
-        <script src="<?php echo URL::base('vendor/jquery/dist/jquery.min.js') ?>"></script>
+        <script src="{{ URL::base('vendor/modernizr/modernizr.js') }}"></script>
+        <script src="{{ URL::base('vendor/jquery/dist/jquery.min.js') }}"></script>
 
         <!-- FIXME reekoheek put it here in order to be used by schema component before all page rendered -->
         <!-- Tshirt -->
-        <script src="<?php echo URL::base('vendor/naked2-theme/js/tshirt.js') ?>"></script>
-        <script src="<?php echo URL::base('vendor/tshirt-popup/tshirt-popup.js') ?>"></script>
-        <script src="<?php echo URL::base('vendor/owl/owl-carousel/owl.carousel.min.js') ?>"></script>
+        <script src="{{ URL::base('vendor/naked2-theme/js/tshirt.js') }}"></script>
+        <script src="{{ URL::base('vendor/tshirt-popup/tshirt-popup.js') }}"></script>
+        <script src="{{ URL::base('vendor/owl/owl-carousel/owl.carousel.min.js') }}"></script>
         <!-- TODO: make tshirt plugins - Dwan 30112014 -->
-        <script src="<?php echo URL::base('vendor/naked2-theme/js/vendor/fixedheadertable.js') ?>"></script>
-        <script src="<?php echo URL::base('vendor/naked2-theme/js/tshirt/TableContext.js') ?>"></script>
-        <script src="<?php echo URL::base('vendor/naked2-theme/js/tshirt/MenuHighlighter.js') ?>"></script>
+        <script src="{{ URL::base('vendor/naked2-theme/js/vendor/fixedheadertable.js') }}"></script>
+        <script src="{{ URL::base('vendor/naked2-theme/js/tshirt/TableContext.js') }}"></script>
+        <script src="{{ URL::base('vendor/naked2-theme/js/tshirt/MenuHighlighter.js') }}"></script>
 
         @section('customjs')
             <!-- Custom JS -->
@@ -47,8 +46,8 @@
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-            <script src="<?php echo URL::base('vendor/html5shiv/dist/html5shiv.min.js') ?>"></script>
-            <script src="<?php echo URL::base('vendor/respond/dest/respond.min.js') ?>"></script>
+            <script src="{{ URL::base('vendor/html5shiv/dist/html5shiv.min.js') }}"></script>
+            <script src="{{ URL::base('vendor/respond/dest/respond.min.js') }}"></script>
         <![endif]-->
     </head>
 

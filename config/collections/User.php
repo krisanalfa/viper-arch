@@ -1,9 +1,5 @@
 <?php
 
-use Norm\Schema\String;
-use Norm\Schema\Password;
-use Norm\Schema\Date;
-
 return array(
     // User using hashing for password, so we need an observer
     'observers' => array(
@@ -11,13 +7,13 @@ return array(
     ),
     // Source structure
     'schema' => array(
-        'username'    => String::create('username')->filter('trim|required|unique:User,username'),
-        'email'       => String::create('email')->filter('trim|required|unique:User,email'),
-        'first_name'  => String::create('first_name')->filter('trim|required'),
-        'middle_name' => String::create('middle_name')->filter('trim'),
-        'last_name'   => String::create('last_name')->filter('trim|required'),
-        'birth_place' => String::create('birth_place')->filter('trim'),
-        'birth_date'  => Date::create('birth_date')->filter('trim|required'),
-        'password'    => Password::create('password')->filter('trim|required|confirmed'),
+        'username'    => schema('string', 'username')->filter('trim|required|unique:User,username'),
+        'email'       => schema('string', 'email')->filter('trim|required|unique:User,email'),
+        'first_name'  => schema('string', 'first_name')->filter('trim|required'),
+        'middle_name' => schema('string', 'middle_name')->filter('trim'),
+        'last_name'   => schema('string', 'last_name')->filter('trim|required'),
+        'birth_place' => schema('string', 'birth_place')->filter('trim'),
+        'birth_date'  => schema('date', 'birth_date')->filter('trim|required'),
+        'password'    => schema('password', 'password')->filter('trim|required|confirmed'),
     ),
 );

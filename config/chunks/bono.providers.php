@@ -42,8 +42,30 @@ return array(
         'KrisanAlfa\\Kraken\\Provider\\FacadesProvider' => array(
             // The dependencies that will be bind to Kraken Container
             'dependencies' => array(
-                // 'NoopInterface' => 'NoopClass'
+                'kraken' => 'KrisanAlfa\\Kraken\\Kraken',
             ),
+        ),
+
+        // Norm Schema Mapper
+        // Use it with:
+        //     schema('keyRegisteredBelow', 'name', 'label')
+        'BComp\\Provider\\SchemaMapper' => array(
+            'boolean'        => 'Norm\\Schema\\Boolean',
+            'date'           => 'Norm\\Schema\\Date',
+            'dateTime'       => 'Norm\\Schema\\DateTime',
+            'file'           => 'Norm\\Schema\\File',
+            'float'          => 'Norm\\Schema\\Float',
+            'integer'        => 'Norm\\Schema\\Integer',
+            'normArray'      => 'Norm\\Schema\\NormArray',
+            'object'         => 'Norm\\Schema\\Object',
+            'password'       => 'Norm\\Schema\\Password',
+            'reference'      => 'Norm\\Schema\\Reference',
+            'referenceArray' => 'Norm\\Schema\\ReferenceArray',
+            'string'         => 'Norm\\Schema\\String',
+            'text'           => 'Norm\\Schema\\Text',
+            'token'          => 'Norm\\Schema\\Token',
+            'unsafeString'   => 'Norm\\Schema\\UnsafeString',
+            'unsafeText'     => 'Norm\\Schema\\UnsafeText',
         ),
     ),
 );
