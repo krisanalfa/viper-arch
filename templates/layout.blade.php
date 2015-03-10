@@ -4,6 +4,21 @@
     {{ f('page.title', App::getInstance()->config('navbar.title')) }}
 @show
 
+@section('usermenu')
+    <ul class="flat topbar">
+        <li class="user">
+            <a href="#">
+                <span class="avatar"><i class="xn xn-user xn-lg"></i></span>
+                <span class="name">{{ @$_SESSION['user']['username'] }} <i class="xn xn-angle-down"></i></span>
+            </a>
+            <ul class="sub animated">
+                <li><a href="{{ URL::site('/logout') }}">Logout</a></li>
+                <li><a href="{{ URL::site('/passwd') }}">Change Password</a></li>
+            </ul>
+        </li>
+    </ul>
+@stop
+
 @section('sidebar')
     <aside class="sidebar">
         <nav class="navbar row">
