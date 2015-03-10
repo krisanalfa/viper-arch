@@ -55,4 +55,3 @@ $app = new App(
 
 // Turn on the light
 $app->run();
-

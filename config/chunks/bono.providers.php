@@ -67,5 +67,13 @@ return array(
             'unsafeString'   => 'Norm\\Schema\\UnsafeString',
             'unsafeText'     => 'Norm\\Schema\\UnsafeText',
         ),
+
+        // The Auth Provider
+        'App\\Provider\\Auth' => array(
+            'allowed' => array(
+                // '/about'      => function() {},
+                // '/disclaimer' => function() {},
+            ),
+        ),
     ),
 );
