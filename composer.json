@@ -6,9 +6,11 @@
         "xinix-technology/bono": "dev-master",
         "xinix-technology/naked2-theme": "dev-master",
         "krisanalfa/bono-kraken": "dev-master",
+        "reekoheek/bono-auth": "dev-master",
         "krisanalfa/b-comp": "dev-master",
         "ircmaxell/password-compat": "dev-master",
-        "slim/slim": "2.6.2 as 2.3.1"
+        "slim/slim": "2.6.2 as 2.3.1",
+        "league/oauth2-client": "0.8.*@dev"
     },
     "repositories": [{
         "type": "vcs",

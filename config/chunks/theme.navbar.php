@@ -4,7 +4,7 @@ use Bono\App;
 
 // Provide the list of menu in your Navbar
 return array(
-    // The title in your navbar, you also can add your logo here
+    // The title in your navbar
     'navbar.title' => 'App – '.ucfirst(App::getInstance()->config('mode')),
 
     // The menus in your navbar
@@ -28,18 +28,6 @@ return array(
 
                     // The icon for your navbar menu
                     'icon'  => '<i class="xn xn-user"></i>'
-                ),
-
-                // 2nd child
-                array(
-                    // What shown in the navbar
-                    'title' => 'Material',
-
-                    // URL for this menu
-                    'uri'   => '/material',
-
-                    // The icon for your navbar menu
-                    'icon'  => '<i class="xn xn-bookmark-o"></i>'
                 ),
             ),
         ),

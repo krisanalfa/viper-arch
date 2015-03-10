@@ -67,5 +67,15 @@ return array(
             'unsafeString'   => 'Norm\\Schema\\UnsafeString',
             'unsafeText'     => 'Norm\\Schema\\UnsafeText',
         ),
+
+        // The Auth Provider
+        'App\\Provider\\Auth' => array(
+            'allowed' => array(
+                '/oauth/github' => function() {},
+                '/oauthCallback' => function() {},
+                // '/about'      => function() {},
+                // '/disclaimer' => function() {},
+            ),
+        ),
     ),
 );
