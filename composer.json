@@ -9,7 +9,7 @@
         "reekoheek/bono-auth": "~0.2.0",
         "krisanalfa/b-comp": "~0.0.2",
         "ircmaxell/password-compat": "~1.0.4",
-        "maximebf/debugbar": "~1.10@dev"
+        "maximebf/debugbar": "~1.10"
     },
     "repositories": [{
         "type": "vcs",
