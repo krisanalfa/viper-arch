@@ -10,3 +10,17 @@ if (! function_exists('schema')) {
         return Schema::resolve($type, $args);
     }
 }
+
+if (! function_exists('app_register')) {
+    function app_register($contract, $concrete)
+    {
+        App::getInstance()->kraken->shared($contract, $concrete);
+    }
+}
+
+if (! function_exists('app_resolve')) {
+    function app_resolve($contract, $parameters = array())
+    {
+        return App::getInstance()->kraken->resolve($contract, $parameters);
+    }
+}

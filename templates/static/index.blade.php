@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="scroll scroll-navbar">
+        <div class="scroll scroll-navbar" style="margin: 0 48px;">
             <h2>Hello Friend!</h2>
 
             <p>

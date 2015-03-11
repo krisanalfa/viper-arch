@@ -75,5 +75,9 @@ return array(
                 // '/disclaimer' => function() {},
             ),
         ),
+
+        // The Debugger Tools
+        'App\\Provider\\DebugBar' => array(
+        ),
     ),
 );

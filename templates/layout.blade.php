@@ -19,11 +19,16 @@
     </ul>
 @stop
 
+@section('customcss')
+    {{ app_resolve('debugbar.renderer')->renderHead() }}
+@stop
+
 @section('sidebar')
+    {{ app_resolve('debugbar.renderer')->render() }}
     <aside class="sidebar">
         <nav class="navbar row">
             <div class="span-12 navsearch">
-                <input type="text" tabindex="-1" placeholder="{{ l('Search') }} {{ l('Menu') }} ...">
+                <input type="text" tabindex="-1" placeholder="Search Menu ...">
             </div>
         </nav>
         <div class="scroll scroll-navbar">
