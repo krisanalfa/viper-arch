@@ -69,12 +69,12 @@ return array(
         ),
 
         // The Auth Provider
-        'App\\Provider\\Auth' => array(
-            'allowed' => array(
-                // '/about'      => function() {},
-                // '/disclaimer' => function() {},
-            ),
-        ),
+        // 'App\\Provider\\Auth' => array(
+        //     'allowed' => array(
+        //         // '/about'      => function() {},
+        //         // '/disclaimer' => function() {},
+        //     ),
+        // ),
 
         // The Debugger Tools
         'App\\Provider\\DebugBar' => array(

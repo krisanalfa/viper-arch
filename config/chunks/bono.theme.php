@@ -9,5 +9,8 @@ return array(
 
         // Make it overidable, means everytime you change the assets in your dependency folder, it will be copied again
         'overwrite' => true,
+
+        // The compiled blade template cache path
+        'cachePath' => 'cache',
     ),
 );
