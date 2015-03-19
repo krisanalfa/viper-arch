@@ -5,7 +5,7 @@
 @show
 
 @section('usermenu')
-    <ul class="flat topbar">
+    <!-- <ul class="flat topbar">
         <li class="user">
             <a href="#">
                 <span class="avatar"><i class="xn xn-user xn-lg"></i></span>
@@ -16,7 +16,7 @@
                 <li><a href="{{ URL::site('/passwd') }}">Change Password</a></li>
             </ul>
         </li>
-    </ul>
+    </ul> -->
 @stop
 
 @section('customcss')
