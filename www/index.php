@@ -53,8 +53,6 @@ $app = new App(
     )
 );
 
-app_resolve('debugbar')['time']->startMeasure('boot', 'Booting Application');
-
 // Turn on the light
 $app->run();
 

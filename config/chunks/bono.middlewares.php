@@ -17,9 +17,9 @@ return array(
         'Bono\\Middleware\\StaticPageMiddleware',
 
         // Authentication Support
-        'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-            'driver' => 'App\\Auth\\Driver\\Norm'
-        ),
+        // 'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+        //     'driver' => 'App\\Auth\\Driver\\Norm'
+        // ),
 
         // Start the session for notification
         'Bono\\Middleware\\SessionMiddleware',

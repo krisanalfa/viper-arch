@@ -4,24 +4,19 @@
     "require": {
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
-        "xinix-technology/naked2-theme": "dev-master",
-        "krisanalfa/bono-kraken": "~0.0.9",
-        "reekoheek/bono-auth": "~0.2.0",
-        "krisanalfa/b-comp": "~0.0.2",
-        "ircmaxell/password-compat": "~1.0.4",
-        "maximebf/debugbar": "~1.10"
+        "krisanalfa/bono-kraken": "dev-master",
+        "krisanalfa/blade-theme": "dev-master",
+        "reekoheek/bono-auth": "dev-master",
+        "krisanalfa/b-comp": "dev-master",
+        "ircmaxell/password-compat": "dev-master"
     },
-    "repositories": [{
-        "type": "vcs",
-        "url": "ssh://tig@xinix.co.id:22033/mcoin/naked2-theme.git"
-    }],
     "autoload": {
         "psr-0": {
             "App": "src"
         },
         "files": [
-            "lib/function.php"
         ]
     },
     "minimum-stability": "dev"
 }
+

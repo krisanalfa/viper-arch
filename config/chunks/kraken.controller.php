@@ -9,7 +9,6 @@ return array(
 
         // Resource mapping to it's controller, if mapper set to null, it'll use the 'default' one
         'mapping' => array(
-            '/user'     => null,
         ),
     ),
 );
